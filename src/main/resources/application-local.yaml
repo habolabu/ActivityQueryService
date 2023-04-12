@@ -26,16 +26,3 @@ spring:
     concurrentConsumers: ${RABBITMQ_CONCURRENT_CONSUMERS:3}
     maxConcurrentConsumers: ${RABBITMQ_MAX_CONCURRENT_CONSUMERS:10}
     receiveTimeout: ${RABBITMQ_RECEIVE_TIMEOUT:100000}
-
-# security config
-security:
-  jwt:
-    secret: ${JWT_SECRET:5319bd30fe7c4e99645069cc20584a4cecd4164cfcce9aa8ddcd76eef842a900}
-    expiration: ${JWT_EXPIRATION:500000}
-    audience: ${JWT_AUDIENCE:habolabu}
-
-# log config
-logging:
-  level:
-    root: debug
-    org.springframework.data.mongodb.core.MongoTemplate: debug
