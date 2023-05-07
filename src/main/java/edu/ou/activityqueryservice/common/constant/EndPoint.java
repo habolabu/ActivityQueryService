@@ -14,6 +14,7 @@ public class EndPoint {
     public static final class Emotion {
         public static final String BASE = "/emotion";
         public static final String DETAIL = "/{emotionId}";
+        public static final String ALL = "/all";
     }
 
     @NoArgsConstructor(access = AccessLevel.PRIVATE)
