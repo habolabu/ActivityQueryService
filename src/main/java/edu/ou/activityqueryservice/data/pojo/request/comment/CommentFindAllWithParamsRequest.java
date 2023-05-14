@@ -11,7 +11,7 @@ public class CommentFindAllWithParamsRequest implements IBaseRequest {
     @NotNull
     @Min(
             value = 1,
-            message = "The page value must greater or equals than 1"
+            message = "The post identity value must greater or equals than 1"
     )
     private Integer postId;
     private Integer commentId;

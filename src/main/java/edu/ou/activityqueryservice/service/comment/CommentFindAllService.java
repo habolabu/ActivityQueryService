@@ -125,7 +125,7 @@ public class CommentFindAllService extends BaseService<IBaseRequest, IBaseRespon
         } else {
             query.addCriteria(
                     Criteria.where("commentId")
-                            .isNullValue()
+                            .isNull()
             );
         }
 
